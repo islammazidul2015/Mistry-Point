@@ -15,40 +15,35 @@
 <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
 <style>
-body{margin:0;font-family:Poppins,Arial;background:#f7f7f7;color:#222}
-header{background:#0f172a;color:white;padding:18px 25px;display:flex;justify-content:space-between;align-items:center}
-.logo{font-weight:700;font-size:22px}
-.hero{background:linear-gradient(120deg,#0f172a,#1e293b);color:white;padding:70px 20px;text-align:center}
-.hero h1{font-size:38px;margin-bottom:10px}
-.btn{background:#22c55e;color:white;padding:12px 20px;border-radius:8px;text-decoration:none;display:inline-block;margin-top:15px}
-.container{max-width:1100px;margin:auto;padding:40px 20px}
-.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
-.card{background:white;padding:25px;border-radius:12px;box-shadow:0 8px 18px rgba(0,0,0,0.07)}
-.card h3{margin-top:0}
-.contact{background:#0f172a;color:white;text-align:center;padding:50px 20px}
-footer{text-align:center;padding:18px;background:#020617;color:#cbd5e1}
-header{flex-wrap:wrap; justify-content:space-between;}
-nav{margin-top:10px;}
-header{flex-wrap:wrap; justify-content:space-between; align-items:center; gap:10px;}
-header .logo img{height:50px;}
-header div{margin-top:5px; color:white; font-weight:500;}
-nav a{margin:5px 10px 0 0;}
-.hero h1{font-size:calc(24px + 2vw);}
-.hero p{font-size:calc(14px + 0.5vw);}
-.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;}
-/* Header Mobile Friendly */
+/* Body & Fonts */
+body {
+  margin: 0;
+  font-family: Poppins, Arial, sans-serif;
+  background: #f7f7f7;
+  color: #222;
+}
+
+/* Header */
 header {
   display: flex;
-  flex-wrap: wrap;       /* wrap elements on small screens */
+  flex-wrap: wrap;          /* wrap elements on small screens */
   justify-content: space-between;
   align-items: center;
   padding: 15px 20px;
-  gap: 10px;            /* spacing between logo, nav, call */
+  gap: 10px;               /* spacing between logo, nav, call */
+  background: #0f172a;
+  color: white;
 }
 
 header .logo img {
   height: 50px;
   max-width: 100%;
+}
+
+header div.call {
+  margin-top: 5px;
+  color: white;
+  font-weight: 500;
 }
 
 nav {
@@ -64,23 +59,24 @@ nav a {
   font-size: 16px;
 }
 
-/* Hero Section Responsive */
+/* Hero Section */
+.hero {
+  background: linear-gradient(120deg, #0f172a, #1e293b);
+  color: white;
+  padding: 70px 20px;
+  text-align: center;
+}
+
 .hero h1 {
   font-size: calc(24px + 2vw);
+  margin-bottom: 10px;
 }
 
 .hero p {
   font-size: calc(14px + 0.5vw);
 }
 
-/* Services Grid Responsive */
-.services {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-}
-
-/* Contact Button Mobile Friendly */
+/* Buttons */
 .btn {
   display: inline-block;
   padding: 12px 20px;
@@ -90,6 +86,40 @@ nav a {
   text-decoration: none;
   text-align: center;
   font-size: 16px;
+  margin-top: 15px;
+}
+
+/* Container */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* Services Grid */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.07);
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+/* Contact Section */
+.contact {
+  background: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
 }
 
 /* Footer */
