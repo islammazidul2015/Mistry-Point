@@ -36,12 +36,75 @@ nav a{margin:5px 10px 0 0;}
 .hero h1{font-size:calc(24px + 2vw);}
 .hero p{font-size:calc(14px + 0.5vw);}
 .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;}
+/* Header Mobile Friendly */
+header {
+  display: flex;
+  flex-wrap: wrap;       /* wrap elements on small screens */
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  gap: 10px;            /* spacing between logo, nav, call */
+}
+
+header .logo img {
+  height: 50px;
+  max-width: 100%;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Hero Section Responsive */
+.hero h1 {
+  font-size: calc(24px + 2vw);
+}
+
+.hero p {
+  font-size: calc(14px + 0.5vw);
+}
+
+/* Services Grid Responsive */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* Contact Button Mobile Friendly */
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 8px;
+  background: #22c55e;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 18px;
+  background: #020617;
+  color: #cbd5e1;
+}
 </style>
 </head>
 <body>
 <header>
   <div class="logo">
-    <img src="images/logo.png" alt="Mistry Point Logo" style="height:50px;">
+    <img src="images/logo.png" alt="Mistry Point Logo">
   </div>
   <nav>
     <a href="index.html">Home</a>
@@ -50,7 +113,7 @@ nav a{margin:5px 10px 0 0;}
     <a href="pricing.html">Pricing</a>
     <a href="contact.html">Contact</a>
   </nav>
-  <a class="btn" href="tel:01941170493">Call Now</a>
+  <div style="color:white;font-weight:500;">Call: 01941170493</div>
 </header>
 
 
