@@ -73,6 +73,18 @@
         .nav-links { display: none; }
         .hero h1 { font-size: 32px; }
     }
+    /* Featured Folding Door Section */
+    .featured-service { background: white; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); overflow: hidden; display: flex; flex-wrap: wrap; margin: 20px auto 60px; max-width: 1200px; border: 1px solid #e2e8f0; }
+    .featured-image { flex: 1; min-width: 300px; background: url('folding-door.jpg') center/cover; min-height: 400px; }
+    .featured-content { flex: 1; min-width: 300px; padding: 40px; display: flex; flex-direction: column; justify-content: center; }
+    .featured-content h2 { color: #0f172a; font-size: 32px; margin-top: 0; margin-bottom: 15px; font-weight: 700; }
+    .featured-content .badge { display: inline-block; background: #dc2626; color: white; padding: 6px 15px; border-radius: 20px; font-size: 13px; font-weight: bold; margin-bottom: 15px; width: max-content; letter-spacing: 1px; }
+    .featured-content p { color: #475569; line-height: 1.8; margin-bottom: 25px; font-size: 15px; }
+    .feature-list { list-style: none; padding: 0; margin-bottom: 30px; }
+    .feature-list li { margin-bottom: 12px; display: flex; align-items: center; color: #1e293b; font-weight: 600; font-size: 15px; }
+    .feature-list li::before { content: '✅'; margin-right: 10px; font-size: 18px; }
+    .btn-featured { background: #0f172a; color: white; padding: 14px 28px; border-radius: 8px; font-weight: bold; text-align: center; display: inline-block; transition: 0.3s; font-size: 16px; border: 2px solid #0f172a; }
+    .btn-featured:hover { background: transparent; color: #0f172a; }
 </style>
 </head>
 <body>
@@ -102,7 +114,24 @@
     <p>গ্লাস, অ্যালুমিনিয়াম ও ইন্টেরিয়র ডিজাইনের নির্ভরযোগ্য সমাধান মিস্ত্রি পয়েন্ট। সঠিক পরামর্শ ও গুণগত মানের নিশ্চয়তা।</p>
     <a href="tel:01941170493" class="btn-main">Request Free Consultation</a>
 </section>
-
+<section class="container" style="padding-top: 20px; padding-bottom: 0;">
+    <div class="featured-service">
+        <div class="featured-image"><folding-door class="png"></folding-door></div>
+        
+        <div class="featured-content">
+            <span class="badge">🔥 PREMIUM SERVICE</span>
+            <h2>Aluminum Folding Door</h2>
+            <p>আপনার ঘরের স্পেস বাঁচাতে এবং ইন্টেরিয়রকে একটি আধুনিক ও লাক্সারি লুক দিতে আমাদের প্রিমিয়াম অ্যালুমিনিয়াম ফোল্ডিং ডোরের জুড়ি নেই। উন্নত মানের প্রোফাইল এবং টেকসই ফিটিংস দিয়ে আমরা তৈরি করি ১০০% কাস্টমাইজড ফোল্ডিং ডোর।</p>
+            <ul class="feature-list">
+                <li>১০০% স্পেস সেভিং ও মডার্ন ডিজাইন</li>
+                <li>সাউন্ডপ্রুফ ও স্মুথ স্লাইডিং সিস্টেম</li>
+                <li>উড কালার, ব্ল্যাক ও কাস্টমাইজড ফ্রেম অপশন</li>
+                <li>অভিজ্ঞ কারিগর দ্বারা ফ্রি মাপ ও ইন্সটলেশন</li>
+            </ul>
+            <a href="tel:01941170493" class="btn-featured">📞 ফ্রি মাপ নিতে কল করুন</a>
+        </div>
+    </div>
+</section>
 <section id="services" class="container">
     <h2 class="section-title">Our Service Categories</h2>
     <div class="services">
