@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="bn">
+<html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Mistry Point | Glass, Aluminum & Interior Service</title>
-<meta name="description" content="Mistry Point provides Aluminium Door, Shower Enclosure, Glass Partition, Window Repair & Home Maintenance Service in Dhaka." />
+<title>Mistry Point | Premium Glass, Aluminum & Interior Services in Dhaka</title>
+<meta name="description" content="Mistry Point offers expert aluminum doors, shower enclosures, glass partitions, and premium interior maintenance services in Mirpur, Dhaka. Get a free consultation today!" />
+<meta name="keywords" content="Glass partition Dhaka, Aluminum sliding door Mirpur, Shower enclosure installation, Interior design services Dhaka, Home maintenance, Mistry Point" />
+<meta name="author" content="Mistry Point">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" href="favicon.png">
@@ -45,7 +47,6 @@
     .featured-service:hover .featured-image img { transform: scale(1.03); }
     .featured-content { flex: 1; min-width: 300px; padding: 50px; display: flex; flex-direction: column; justify-content: center; }
     .featured-content h2 { color: #0f172a; font-size: 34px; margin-top: 0; margin-bottom: 15px; font-weight: 700; }
-    /* Premium Golden Badge */
     .featured-content .badge { display: inline-block; background: linear-gradient(135deg, #d4af37, #f3e5ab); color: #453404; padding: 6px 18px; border-radius: 50px; font-size: 12px; font-weight: 700; margin-bottom: 20px; width: max-content; letter-spacing: 1.5px; text-transform: uppercase; box-shadow: 0 4px 10px rgba(212, 175, 55, 0.2); }
     .featured-content p { color: #64748b; line-height: 1.8; margin-bottom: 30px; font-size: 16px; }
     .feature-list { list-style: none; padding: 0; margin-bottom: 40px; }
@@ -57,16 +58,18 @@
     .btn-outline { background: transparent; color: #0f172a; border: 2px solid #e2e8f0; }
     .btn-outline:hover { border-color: #0f172a; background: #f8fafc; }
 
-    /* Services Grid - Soft Modern Cards */
+    /* Services Grid - With Images & Hover Effects */
     .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-    .card { background: white; padding: 40px 30px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.03); text-align: center; transition: all 0.4s ease; border: 1px solid rgba(0,0,0,0.02); position: relative; top: 0; }
+    .card { background: white; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.03); text-align: center; transition: all 0.4s ease; border: 1px solid rgba(0,0,0,0.02); overflow: hidden; display: flex; flex-direction: column; }
     .card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.08); border-color: rgba(37, 99, 235, 0.1); }
-    .card h3 { margin: 15px 0 15px; font-size: 22px; color: #0f172a; font-weight: 600; }
-    .card p { font-size: 15px; color: #64748b; line-height: 1.7; margin: 0; }
     
-    /* Icon placeholder styling for service cards */
-    .card::before { content: ''; display: inline-block; width: 60px; height: 60px; background: #eff6ff; border-radius: 50%; margin-bottom: 15px; transition: all 0.3s ease; }
-    .card:hover::before { background: #2563eb; }
+    .card-img-wrapper { width: 100%; height: 220px; overflow: hidden; }
+    .card-img-wrapper img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+    .card:hover .card-img-wrapper img { transform: scale(1.1); }
+    
+    .card-content { padding: 30px 25px; display: flex; flex-direction: column; justify-content: center; flex-grow: 1; }
+    .card h3 { margin: 0 0 12px; font-size: 22px; color: #0f172a; font-weight: 600; }
+    .card p { font-size: 15px; color: #64748b; line-height: 1.7; margin: 0; }
 
     /* Working Process */
     .process-container { background: white; padding: 80px 20px; }
@@ -113,12 +116,12 @@
 
 <div class="top-bar">
     <div>📞 01941170493 &nbsp;|&nbsp; ✉️ info@mistrypoint.com</div>
-    <div>📍 ৪ পূর্ব কাজীপাড়া, বিন্দুবৃত্ত গলি, মিরপুর, ঢাকা</div>
+    <div>📍 4 East Kazipara, Bindubritto Goli, Mirpur, Dhaka</div>
 </div>
 
 <header>
     <a href="#" class="logo" style="display: flex; align-items: center;">
-        <img src="logo.png" alt="Mistry Point Logo" style="max-height: 60px; width: auto; margin-right: 10px;">
+        <img src="logo.png" alt="Mistry Point Logo - Glass and Aluminum Services" style="max-height: 60px; width: auto; margin-right: 10px;">
     </a>
     
     <div class="nav-links">
@@ -132,87 +135,123 @@
 </header>
 
 <section class="hero">
-    <h1>We Renovate Your Dream House</h1>
-    <p>গ্লাস, অ্যালুমিনিয়াম ও ইন্টেরিয়র ডিজাইনের নির্ভরযোগ্য সমাধান মিস্ত্রি পয়েন্ট। সঠিক পরামর্শ ও গুণগত মানের নিশ্চয়তা।</p>
-    <a href="tel:01941170493" class="btn-main">Request Free Consultation</a>
+    <h1>Transforming Spaces with Premium Interior Solutions</h1>
+    <p>Mistry Point is your trusted partner for top-tier glass, aluminum, and interior design solutions in Dhaka. We guarantee expert consultancy, precise execution, and unmatched quality.</p>
+    <a href="tel:01941170493" class="btn-main">Request a Free Consultation</a>
 </section>
 
 <section class="container" style="padding-top: -60px; padding-bottom: 20px; margin-top: -40px; position: relative; z-index: 10;">
     <div class="featured-service">
         <div class="featured-image">
-            <img src="folding-door.png" alt="Aluminum Folding Door">
+            <img src="folding-door.png" alt="Premium Aluminum Folding Door Installation">
         </div>
         
         <div class="featured-content">
             <span class="badge">Premium Service</span>
-            <h2>Aluminum Folding Door</h2>
-            <p>আপনার ঘরের স্পেস বাঁচাতে এবং ইন্টেরিয়রকে একটি আধুনিক ও লাক্সারি লুক দিতে আমাদের প্রিমিয়াম অ্যালুমিনিয়াম ফোল্ডিং ডোরের জুড়ি নেই। উন্নত মানের প্রোফাইল এবং টেকসই ফিটিংস দিয়ে আমরা তৈরি করি ১০০% কাস্টমাইজড ফোল্ডিং ডোর।</p>
+            <h2>Custom Aluminum Folding Doors</h2>
+            <p>Maximize your space and elevate your interior with a modern, luxurious touch. Our premium aluminum folding doors are 100% customized using high-quality profiles and highly durable fittings for long-lasting performance.</p>
             <ul class="feature-list">
-                <li>১০০% স্পেস সেভিং ও মডার্ন ডিজাইন</li>
-                <li>সাউন্ডপ্রুফ ও স্মুথ স্লাইডিং সিস্টেম</li>
-                <li>উড কালার, ব্ল্যাক ও কাস্টমাইজড ফ্রেম অপশন</li>
-                <li>অভিজ্ঞ কারিগর দ্বারা ফ্রি মাপ ও ইন্সটলেশন</li>
+                <li>100% Space-Saving & Modern Aesthetic Design</li>
+                <li>Soundproof & Ultra-Smooth Sliding Mechanism</li>
+                <li>Wood Finish, Matte Black & Custom Frame Options</li>
+                <li>Free Measurement & Expert Installation Included</li>
             </ul>
             <div class="btn-group">
-                <a href="https://wa.me/+8801941170493" class="btn-featured" target="_blank">💬 হোয়াটসঅ্যাপে মেসেজ দিন</a>
-                <a href="folding-door.html" class="btn-featured btn-outline">বিস্তারিত জানুন</a>
+                <a href="https://wa.me/+8801941170493" class="btn-featured" target="_blank">💬 Message on WhatsApp</a>
+                <a href="folding-door.html" class="btn-featured btn-outline">Learn More</a>
             </div>
         </div>
     </div>
 </section>
 
+<!-- Services Section -->
 <section id="services" class="container" style="padding-top: 20px;">
-    <h2 class="section-title">Our Service Categories</h2>
+    <h2 class="section-title">Explore Our Services</h2>
     <div class="services">
         <div class="card">
-            <h3>Shower Enclosure</h3>
-            <p>Premium Bathroom glass partition & hanging sliding door setup.</p>
+            <div class="card-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=80" alt="Luxury Shower Enclosure Installation">
+            </div>
+            <div class="card-content">
+                <h3>Shower Enclosure</h3>
+                <p>Premium bathroom glass partitions and frameless hanging sliding door setups for a luxurious look.</p>
+            </div>
         </div>
+        
         <div class="card">
-            <h3>Aluminium Door & Window</h3>
-            <p>Sliding, folding door and soundproof window installation.</p>
+            <div class="card-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=600&q=80" alt="Aluminium Door and Soundproof Window Installation">
+            </div>
+            <div class="card-content">
+                <h3>Aluminium Door & Window</h3>
+                <p>High-quality sliding doors, folding doors, and robust soundproof window installations.</p>
+            </div>
         </div>
+        
         <div class="card">
-            <h3>Glass Partition & Sticker</h3>
-            <p>Modern glass divider for office and home with custom stickers.</p>
+            <div class="card-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80" alt="Office Glass Partition and Frosted Sticker">
+            </div>
+            <div class="card-content">
+                <h3>Glass Partition & Sticker</h3>
+                <p>Modern glass dividers for offices and homes, complete with elegant custom frosted stickers.</p>
+            </div>
         </div>
+        
         <div class="card">
-            <h3>Mosquito Net</h3>
-            <p>Fixed and sliding custom size mosquito protection solutions.</p>
+            <div class="card-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80" alt="Custom Mosquito Net Installation">
+            </div>
+            <div class="card-content">
+                <h3>Mosquito Net Solutions</h3>
+                <p>Fixed and sliding customized mosquito protection nets to keep your home safe and insect-free.</p>
+            </div>
         </div>
+        
         <div class="card">
-            <h3>Mirror & LED Mirror</h3>
-            <p>Luxury decorative mirror and modern wall mirror installation.</p>
+            <div class="card-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=600&q=80" alt="Decorative Wall Mirror and LED Mirror">
+            </div>
+            <div class="card-content">
+                <h3>Mirror & LED Mirror</h3>
+                <p>Luxury decorative mirrors and modern LED wall mirror setups for bathrooms and living spaces.</p>
+            </div>
         </div>
+        
         <div class="card">
-            <h3>Maintenance & Repair</h3>
-            <p>Lock, roller, channel fixing & bathroom glass door repair.</p>
+            <div class="card-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1581141849291-1125c7b692b5?auto=format&fit=crop&w=600&q=80" alt="Door Repair and Maintenance Service">
+            </div>
+            <div class="card-content">
+                <h3>Maintenance & Repair</h3>
+                <p>Expert fixing for locks, rollers, channels, and complete bathroom glass door restoration.</p>
+            </div>
         </div>
     </div>
 </section>
 
 <section id="process" class="process-container">
-    <h2 class="section-title">আমাদের কাজের প্রক্রিয়া</h2>
+    <h2 class="section-title">Our Working Process</h2>
     <div class="process-grid">
         <div class="process-box">
-            <h3>কাজের মূল্যায়ন</h3>
+            <h3>Project Assessment</h3>
             <ul>
-                <li>আপনার বাড়ির সমস্যাগুলো বিশ্লেষণ করা</li>
-                <li>ক্ষতির কারণ চিহ্নিত করে রিপোর্ট তৈরি করা</li>
+                <li>Detailed analysis of your interior requirements.</li>
+                <li>Identifying core issues and planning the perfect solution.</li>
             </ul>
         </div>
         <div class="process-box">
-            <h3>আমাদের বিশেষত্ব</h3>
+            <h3>Our Expertise</h3>
             <ul>
-                <li>নির্ভরযোগ্য ও মানসম্মত পরিষেবা</li>
-                <li>অভিজ্ঞ কারিগর দ্বারা নিখুঁত কাজ</li>
+                <li>Reliable, transparent, and top-quality service delivery.</li>
+                <li>Flawless execution by highly experienced craftsmen.</li>
             </ul>
         </div>
         <div class="process-box">
-            <h3>আপনার চিন্তার সমাধান</h3>
+            <h3>Your Peace of Mind</h3>
             <ul>
-                <li>সাশ্রয়ী খরচ ও সময়ের সঠিক ব্যবহার</li>
-                <li>১০০% কাস্টমার সন্তুষ্টির নিশ্চয়তা</li>
+                <li>Cost-effective solutions delivered strictly on time.</li>
+                <li>100% Customer Satisfaction and work guarantee.</li>
             </ul>
         </div>
     </div>
@@ -223,19 +262,19 @@
     <div class="steps-grid">
         <div class="step-card">
             <h4>Step 1</h4>
-            <p>যোগাযোগ করুন এবং আপনার চাহিদা জানান</p>
+            <p>Contact us and share your specific requirements.</p>
         </div>
         <div class="step-card">
             <h4>Step 2</h4>
-            <p>আমাদের বিশেষজ্ঞদের ফ্রি কনসালটেন্সি</p>
+            <p>Receive comprehensive free consultancy from our experts.</p>
         </div>
         <div class="step-card">
             <h4>Step 3</h4>
-            <p>সাইট ভিজিট এবং বাজেট নির্ধারণ</p>
+            <p>We conduct a site visit and provide an accurate budget.</p>
         </div>
         <div class="step-card">
             <h4>Step 4</h4>
-            <p>সঠিক সময়ে প্রজেক্ট সম্পন্ন করা</p>
+            <p>Timely and flawless completion of your project.</p>
         </div>
     </div>
 </section>
@@ -249,7 +288,7 @@
     <div class="footer-grid">
         <div class="footer-col">
             <h3 style="font-size: 24px; color: white;">Mistry Point</h3>
-            <p>আপনার বাড়ি, ফ্ল্যাট বা অফিসের উন্নয়ন আমরা করি দক্ষতা ও বিশ্বাসের সাথে। ঝামেলামুক্ত সমাধানের জন্য আজই যোগাযোগ করুন।</p>
+            <p>We elevate your home, flat, or office interior with skill, dedication, and trust. Contact us today for reliable and hassle-free maintenance solutions.</p>
         </div>
         <div class="footer-col">
             <h3>Quick Links</h3>
@@ -262,7 +301,7 @@
         </div>
         <div class="footer-col">
             <h3>Contact Info</h3>
-            <p>📍 ৪ পূর্ব কাজীপাড়া, বিন্দুবৃত্ত গলি, মিরপুর, ঢাকা</p>
+            <p>📍 4 East Kazipara, Bindubritto Goli, Mirpur, Dhaka</p>
             <p>📞 01941170493</p>
             <p>✉️ info@mistrypoint.com</p>
         </div>
